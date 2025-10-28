@@ -76,10 +76,15 @@ The dataset combines images from two primary sources to ensure comprehensive cov
 
 ### Preprocessing Pipeline
 
+
 1. **Image Resizing:** All images standardized to 50×50 pixels
 2. **Normalization:** Pixel values normalized to [0, 1] range
 3. **Quality Preservation:** Pre-existing augmentations (zoom, rotation, noise) retained
 4. **Batch Processing:** Default batch size of 32 images
+
+<p align="center">
+    <img src="img/Picture3.png" width="60%">
+</p>
 
 ---
 
@@ -142,7 +147,12 @@ Two CNN variants were evaluated:
 | **Model 1** | 3×3 | **98%** | **~36 seconds** |
 | Model 2 | 5×5 | 96% | ~40 seconds |
 
+
 **Selected Model:** Model 1 (3×3 kernel) demonstrated superior performance in both accuracy and efficiency.
+
+<p align="center">
+    <img src="img/Picture1.png" width="70%">
+</p>
 
 ---
 
@@ -157,6 +167,10 @@ Two CNN variants were evaluated:
 ### Confusion Matrix
 
 A confusion matrix visualization reveals the model's classification performance, highlighting true positives, false positives, and false negatives across all 33 character classes.
+
+<p align="center">
+    <img src="img/Picture4.png" width="55%">
+</p>
 
 ---
 
